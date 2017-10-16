@@ -5,9 +5,7 @@
   </header>
 
   <article class="product-detail">
-
     <div class="row">
-
       <div class="col-sm-4">
         <%= image_tag @product.image.url, class: 'main-img' %>
       </div>
@@ -25,7 +23,27 @@
         </dl>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <div id="review-form">
+          <%= form_for [@product, @review] do |f| %>
+            <h5 id="review-rating">Rating: <%= f.select(:rating) do %></h5>
+              <% [['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5]].each do |r| %>
+                <%= content_tag(:option, r.first, value: r.last) %>
+              <% end %>
+            <% end %>
+            <h5 id="review-description">Comment: </h5>
+            <span id="review-description"><%= f.text_area :description %></span></h5>
+            <div style="float: right"><%= f.submit "Submit" %></div>
+          <% end %>
+        </div>
 
+        <div>
+          <%= render @review %>
+        </div>
+      </div>
+    </div>
   </article>
 
 </section>
