@@ -1,7 +1,16 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2.
 
+## Final Product
+
+!["Screenshot of Main page"](https://github.com/kevinmore80/jungle-rails/tree/master/docs/main.png)
+
+!["Screenshot of Admin Products page"](https://github.com/kevinmore80/jungle-rails/tree/master/docs/admin_products_screen.png)
+
+!["Screenshot of Product detail page"](https://github.com/kevinmore80/jungle-rails/tree/master/docs/customer_reviews.png)
+
+!["Screenshot of Order placed page"](https://github.com/kevinmore80/jungle-rails/tree/master/docs/checkout_receipt.png)
 
 ## Setup
 
